@@ -1,0 +1,27 @@
+{% if content == nil %}
+{% assign content = post.content %}
+{% endif %}
+
+<article itemscope itemtype="http://schema.org/BlogPosting" class="post hentry">
+	<header>
+		<h1 itemprop="name" class="entry-title">
+		<a href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+		</h1>
+
+		<span class="published updated" title="{{ post.date | date_to_xmlschema }}">
+			{{ post.date | date_to_string }}
+		</span>
+
+                <g:plusone size="medium" href="{{ site.url }}{{ post.url }}"></g:plusone>
+                <a href="https://twitter.com/share" class="twitter-share-button"
+                        data-url="{{ site.url }}{{ post.url }}"
+                        data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}">
+                        Tweet
+                </a>
+
+		<address class="vcard author"><span class="fn">{{ post.author }}</span></address>
+	</header>
+	
+	<section class="entry-content">{{ content }}</section>
+</article>
+
