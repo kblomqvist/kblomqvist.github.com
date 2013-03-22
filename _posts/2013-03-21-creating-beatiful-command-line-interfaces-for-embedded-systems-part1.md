@@ -42,7 +42,8 @@ Introducing docopt
 It was in PyCon Finland 2012 when
 I heard about [docopt](http://docopt.org/), a CLI description language that
 generates the required code, created by Vladimir Keleshev. I still remember
-[people applauding in the YouTube video when they saw docopt in action](http://www.youtube.com/watch?v=pXhcPJK5cMc&feature=player_detailpage#t=417s) -- it really was beautiful. Yeah, Mr. Keleshev
+[people applauding in the YouTube video when they saw docopt in action](http://www.youtube.com/watch?v=pXhcPJK5cMc&feature=player_detailpage#t=417s)
+-- it really was beautiful. Unfortunately Mr. Keleshev
 was inhibited to give a speech in PyCon Finland 2012, so we watched his
 earlier speech from YouTube. During the session I checked [the docopt's
 GitHub repository](https://github.com/docopt/docopt.c) and realized that
