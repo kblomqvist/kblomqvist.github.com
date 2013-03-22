@@ -1,6 +1,8 @@
 body { padding-top: 20px; padding-bottom: 40px; font-family: OxygenRegular; }
 .container-narrow { margin: 0 auto; max-width: 700px; }
 
+body.landing ul { margin-bottom: 30px; }
+
 h1, h2, h3, h4, h5 { font-weight: normal; }
 
 ul.mylist > li { list-style: none; }
