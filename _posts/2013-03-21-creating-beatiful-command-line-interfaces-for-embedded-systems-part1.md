@@ -10,7 +10,7 @@ Ever since I managed to send my first character from my PC to
 a microcontroller, I've had an itch to implement a beautiful
 CLI for all of my hardware. So far I've settled to using single
 character commands followed by positional arguments, which I parse
-with `sscanf()` like this
+with `sscanf()` like this:
 
 <pre class="prettyprint lang-c">
 getline(line);
@@ -29,32 +29,32 @@ switch(line[0]) {
 </pre>
 
 Although this works very well, I still have missed the word-length commands with
-possible subcommands and options. I would like my boards to be more responsive and I
-want named arguments as I tend to forget the argument ordering surprisingly often.
-It would also be more convenient for others to operate with the board, if it responds like any
+possible subcommands and options. I'd like my boards to be more responsive and I
+want named arguments as I tend to forget the argument ordering quite often.
+It would also be more convenient for others to operate with the board, if it responded like any
 command-line program. In addition, consider the following command: `a 1 2`. What if I only want
 to change the second argument and leave the first one to be default?
-I cannot do that as I still have to define the first one as well (and remember the default value)
-to define the second one. The named arguments would solve this too.
+I cannot do that as I still have to define the first one as well (and remember it's default value)
+in order to define the second one. The named arguments would solve this too.
 
 Introducing docopt
 ------------------
-It was in PyCon Finland 2012 when
-I heard about [docopt](http://docopt.org/), a CLI description language that
+It was in PyCon Finland 2012 when I heard about [docopt](http://docopt.org/),
+a CLI description language that
 generates the required code, created by Vladimir Keleshev. I still remember
 [people applauding in the YouTube video when they saw docopt in action](http://www.youtube.com/watch?v=pXhcPJK5cMc&feature=player_detailpage#t=417s)
 -- it really was beautiful. Unfortunately Mr. Keleshev
 was unable to give a speech in PyCon Finland 2012, so we watched his
 earlier speech from YouTube. During the session I checked [the docopt's
 GitHub repository](https://github.com/docopt/docopt.c) and realized that
-there was a port for C. Since then I have been thinking about using docopt
+there was a port for C. Since then I've been thinking about using docopt
 with my embedded systems.
 
-In short, using the docopt we can just write our commands as a
-help message in a man page styled file and then let the docopt generate
-the *docopt.c* file from this file. After then we only have to include
+In short, using docopt we can just write our commands as a
+help message in a man page styled file and then let docopt generate
+the *docopt.c* file from this file. After that we only have to include
 the generated *docopt.c* source file in our program and we are ready to use it.
-Here's an example how the man page styled `.docopt` file can look like
+Here's an example how the man page styled `.docopt` file might look like
 for an imaginary board that does analog-to-digital conversion
 
 <pre>
@@ -87,19 +87,19 @@ Testing with Aery32
 -------------------
 Testing docopt with [Aery32](http://www.aery32.com) was quite simple
 (being one of the authors the choice of platform was obvious). I copied
-the *example/docopt.c* file from the docopt.c repository and placed it
+the *example/docopt.c* file from [the docopt.c GitHub repository](https://github.com/docopt/docopt.c) and placed it
 to my Aery32 project folder. I then took the Serial Port class driver
 example file from Aery32 framework to be my *main.cpp* and modified
-it a bit, as seen below. Additionally I had to make few changes in
-*docopt.c* (file) to make it play nice in an embbed environment where,
+it a bit, as seen below. Additionally I had to make few changes to
+the copied *docopt.c* example file to make it play nice in an embbed environment where,
 for example, one usually doesn't want to call `exit()`, but return to
-`main()`. Lastly *docopt.c* source file had to be excluded in the *Makefile*
+`main()`. Lastly this file had to be excluded in the *Makefile*
 to prevent Aery32 build system from compiling it as a separate source file.
 
 The `line_to_argv()` function was recently added to the Aery32 framework
 in order to modify the read line into argument vector (argv) that can be
-passed to `docopt()`. While this function was originally written the
-docopt.c in mind, I've already found that it is useful in implementing
+passed to `docopt()`. While this function was originally written with the
+docopt's C port in mind, I've already found it useful in implementing
 `sscanf()` free communication as well.
 
 <pre class="prettyprint lang-c">
@@ -190,7 +190,7 @@ loop saying *"--foo is not recognized"*, and the C++ compiler gives several warn
 of <em>"deprecated conversion from string constant to 'char*'"</em>.
 
 Finally here's an example how the embedded main loop could look like when
-everything is in place. See that I have already modified the `docopt()`
+everything is in place. See that I've already modified the `docopt()`
 function to take a pointer to the *args* record.
 
 <pre class="prettyprint lang-c">
