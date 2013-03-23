@@ -75,9 +75,9 @@ Options:
 Unfortunately there was a major setback as soon as I started: I noticed
 that the current C port of docopt does not support commands yet, only
 options. This means that I cannot have separate commands like *measure*
-to start a measurement, or *channel* to change the default channel. At the
+to start a measurement, or *channel* to change the channel. At the
 moment I only can work with the options like *--average* or *-a* to tell
-the adc unit how much the signal should be averaged.
+the ADC how much the signal should be averaged.
 
 To test this example with docopt, go to [http://try.docopt.org/](http://try.docopt.org/)
 and copy-paste the upper help message into the input area there. Note that the program
