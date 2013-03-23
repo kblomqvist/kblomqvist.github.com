@@ -44,7 +44,7 @@ I heard about [docopt](http://docopt.org/), a CLI description language that
 generates the required code, created by Vladimir Keleshev. I still remember
 [people applauding in the YouTube video when they saw docopt in action](http://www.youtube.com/watch?v=pXhcPJK5cMc&feature=player_detailpage#t=417s)
 -- it really was beautiful. Unfortunately Mr. Keleshev
-was inhibited to give a speech in PyCon Finland 2012, so we watched his
+was unable to give a speech in PyCon Finland 2012, so we watched his
 earlier speech from YouTube. During the session I checked [the docopt's
 GitHub repository](https://github.com/docopt/docopt.c) and realized that
 there was a port for C. Since then I have been thinking about using docopt
@@ -86,7 +86,7 @@ name *board* is not included into the argument vector (argv).
 Testing with Aery32
 -------------------
 Testing docopt with [Aery32](http://www.aery32.com) was quite simple
-(being one of the authors the choose of platform was obvious). I copied
+(being one of the authors the choice of platform was obvious). I copied
 the *example/docopt.c* file from the docopt.c repository and placed it
 to my Aery32 project folder. I then took the Serial Port class driver
 example file from Aery32 framework to be my *main.cpp* and modified
