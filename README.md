@@ -11,6 +11,6 @@ and is based of MIT-licensed work by [Tom Preston-Werner](http://github.com/mojo
 
 ### Assets
 
-- Twitter Bootstrap: Apache License, Version 2.0.
-- google-code-prettify: Apache License, Version 2.0.
-- Icons from Glyphicons Free, licensed under CC BY 3.0.
+- [Twitter Bootstrap](http://twitter.github.com/bootstrap/), Copyright 2012 Twitter, Inc., Apache License, Version 2.0.
+- [google-code-prettify](https://code.google.com/p/google-code-prettify/), Copyright (C) 2008 Google Inc., Apache License, Version 2.0.
+- [Icons from Glyphicons Free](http://glyphicons.com/), licensed under CC BY 3.0.
