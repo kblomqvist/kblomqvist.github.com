@@ -15,9 +15,8 @@ p+h2, pre+h2 { margin-top: 40px; }
 
 
 /* POST */
-.post .entry-title { font-size: 31.5px; }
-.post .entry-title > a { color: #005580; }
-.post .entry-title > a:hover, .entry-title > a:focus { text-decoration: none; }
+.post .entry-title { font-size: 31.5px; color: #005580; }
+.post .entry-title > a:link { color: inherit; text-decoration: none; }
 .post p, .post h2 { margin-left: 100px; }
 
 .post header { margin-bottom: 20px; }
