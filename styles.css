@@ -2,6 +2,7 @@ body { padding-top: 20px; padding-bottom: 40px; font-family: OxygenRegular; }
 .container-narrow { margin: 0 auto; max-width: 700px; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
+.page-title > a:hover, .page-title > a:focus { text-decoration: none; color: #0088CC; }
 
 ul.mylist > li { list-style: none; }
 ul.mylist > li > address, .post address { display: none; }
@@ -12,11 +13,12 @@ ul.jpapers > li { margin: 4px 0; }
 p { text-align: justify; font-size: 15px }
 p+h2, pre+h2 { margin-top: 40px; }
 
+
+/* POST */
 .post .entry-title { font-size: 31.5px; }
 .post .entry-title > a { color: #005580; }
 .post .entry-title > a:hover, .entry-title > a:focus { text-decoration: none; }
+.post p, .post h2 { margin-left: 100px; }
 
 .post header { margin-bottom: 20px; }
 .post .published { font-style: italic; color: #999; font-family: Verdana; }
-
-.page-title > a:hover, .page-title > a:focus { text-decoration: none; color: #0088CC; }
