@@ -14,7 +14,7 @@ ul > li { margin: 6px 0; }
 ul.posts > li { list-style: none; }
 ul.posts > li > address, .post address { display: none; }
 ul.posts .entry-date { font-family: Monaco, "Courier New", monospace; color: #999; font-style: italic; }
-ul.publications > li .journal { color: #888; }
+ul.publications .journal { color: #888; }
 
 /* Post */
 .post .entry-title { font-size: 31.5px; color: #005580; }
