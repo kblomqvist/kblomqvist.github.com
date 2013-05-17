@@ -1,20 +1,22 @@
 body { padding-top: 20px; padding-bottom: 40px; font-family: "Open Sans"; }
-.container-narrow { margin: 0 auto; max-width: 700px; }
-
-h1, h2, h3, h4, h5 { font-weight: normal; }
-.page-title > a:hover, .page-title > a:focus { text-decoration: none; color: #0088CC; }
-
-ul.list > li { list-style: none; }
-ul.list > li > address, .post address { display: none; }
-ul.list .entry-date { font-family: Monaco, "Courier New", monospace; color: #999; font-style: italic; }
-
-ul.puplications > li { margin: 4px 0; }
-ul.publications > li .journal { color: #888; }
 
 p { text-align: justify; font-size: 15px }
 p+h2, pre+h2 { margin-top: 40px; }
 
-/* POST */
+h1, h2, h3, h4, h5 { font-weight: normal; }
+
+.container-narrow { margin: 0 auto; max-width: 700px; }
+
+.page-title > a:hover, .page-title > a:focus { text-decoration: none; color: #0088CC; }
+
+/* Lists */
+ul > li { margin: 6px 0; }
+ul.posts > li { list-style: none; }
+ul.posts > li > address, .post address { display: none; }
+ul.posts .entry-date { font-family: Monaco, "Courier New", monospace; color: #999; font-style: italic; }
+ul.publications > li .journal { color: #888; }
+
+/* Post */
 .post .entry-title { font-size: 31.5px; color: #005580; }
 .post .entry-title > a:link { color: inherit; text-decoration: none; }
 .post p, .post h2 { margin-left: 100px; }
