@@ -19,7 +19,6 @@ ul.publications .journal { color: #888; font-size: 13px; }
 /* Post */
 .post .entry-title { font-size: 31.5px; color: #005580; }
 .post .entry-title > a:link { color: inherit; text-decoration: none; }
-.post p, .post h2 { margin-left: 100px; }
 
 .post header { margin-bottom: 20px; }
 .post .published { font-style: italic; color: #999; font-family: Verdana; }
