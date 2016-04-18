@@ -1,7 +1,7 @@
 title: Kim Blomqvist
 url: http://kblomqvist.github.io
 
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 permalink: /:year/:month/:day/:title
 
